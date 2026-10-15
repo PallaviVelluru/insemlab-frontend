@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Event Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Available Events</h2>
+
+        <div class="card">
+            <h3>Hackathon 2026</h3>
+            <p>Date: 20 November 2026</p>
+            <p>Category: Technical</p>
+            <button onclick="registerEvent('Hackathon 2026')">
+                Register
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Cultural Fest 2026</h3>
+            <p>Date: 25 November 2026</p>
+            <p>Category: Cultural</p>
+            <button onclick="registerEvent('Cultural Fest 2026')">
+                Register
+            </button>
+        </div>
+    </main>
+
+    <script>
+        function registerEvent(eventName) {
+            alert("You have selected " + eventName + "!");
+        }
+    </script>
+
+</body>
+</html>
